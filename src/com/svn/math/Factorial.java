@@ -31,12 +31,7 @@ public class Factorial {
     public long value() {
         if(ofValue <= 1) return 1;
 
-        long value=1;
-        for(int i=1;i<=ofValue;i++) {
-            value *= i;
-
-        }
-        return value;
+        return ofValue * new Factorial(ofValue - 1).value();
     }
 
 }
