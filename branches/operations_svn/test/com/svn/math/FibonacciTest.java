@@ -24,25 +24,15 @@ import static junit.framework.Assert.assertEquals;
  *
  * @author Deep Shah
  */
-public class FactorialTest {
+public class FibonacciTest {
 
     @Test
-    public void shouldFindFactorialOfZero() {
-        assertEquals(1, new Factorial(0).value());
+    public void shouldFindFibonacciValueOfZero() {
+        assertEquals(0, new Fibonacci(0).value());
     }
 
     @Test
-    public void shouldFindTheFactorialOfOne() {
-        assertEquals(1, new Factorial(1).value());
-    }
-
-    @Test
-    public void shouldFindFactorialOfAnyNumber() {
-        assertEquals(3628800, new Factorial(10).value());
-    }
-
-    @Test
-    public void shouldThorwStackOverflowException() {
-        assertEquals(1, new Factorial(10000).value());
+    public void shouldFindFibonacciValueOfOne() {
+        assertEquals(1, new Fibonacci(1).value());
     }
 }

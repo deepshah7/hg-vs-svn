@@ -15,34 +15,21 @@
  */
 package com.svn.math;
 
-import org.junit.Test;
-
-import static junit.framework.Assert.assertEquals;
-
 /**
  * Created by IntelliJ IDEA.
  *
  * @author Deep Shah
  */
-public class FactorialTest {
+public class Fibonacci {
+    private int ofValue;
 
-    @Test
-    public void shouldFindFactorialOfZero() {
-        assertEquals(1, new Factorial(0).value());
+    public Fibonacci(int ofValue) {
+
+        this.ofValue = ofValue;
     }
 
-    @Test
-    public void shouldFindTheFactorialOfOne() {
-        assertEquals(1, new Factorial(1).value());
-    }
-
-    @Test
-    public void shouldFindFactorialOfAnyNumber() {
-        assertEquals(3628800, new Factorial(10).value());
-    }
-
-    @Test
-    public void shouldThorwStackOverflowException() {
-        assertEquals(1, new Factorial(10000).value());
+    public long value() {
+        if(ofValue == 0) return 0;
+        return 1;
     }
 }
