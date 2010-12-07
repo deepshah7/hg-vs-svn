@@ -30,4 +30,9 @@ public class FactorialTest {
     public void shouldFindFactorialOfZero() {
         assertEquals(0, new Factorial(0).value());
     }
+
+    @Test
+    public void shouldFindFactorialOfOne() {
+        assertEquals(1, new Factorial(1).value());
+    }
 }

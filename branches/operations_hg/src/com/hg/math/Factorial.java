@@ -29,6 +29,8 @@ public class Factorial {
     }
 
     public long value() {
-        return 0;
+        if(ofValue == 0) return 0;
+        if(ofValue == 1) return 1;
+        throw new RuntimeException("Dont you know that my program only find factorial of numbers till 1");
     }
 }
