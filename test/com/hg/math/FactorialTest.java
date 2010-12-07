@@ -28,7 +28,7 @@ public class FactorialTest {
 
     @Test
     public void shouldFindFactorialOfZero() {
-        assertEquals(0, new Factorial(0).value());
+        assertEquals(1, new Factorial(0).value());
     }
 
     @Test
