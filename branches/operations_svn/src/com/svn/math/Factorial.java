@@ -29,12 +29,12 @@ public class Factorial {
     }
 
     public long value() {
-        if(ofValue == 0) return 0;
-        if(ofValue == 1) return 1;
+        if(ofValue <= 1) return 1;
 
         long value=1;
         for(int i=1;i<=ofValue;i++) {
             value *= i;
+
         }
         return value;
     }
