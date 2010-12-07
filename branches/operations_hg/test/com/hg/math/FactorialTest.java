@@ -35,4 +35,9 @@ public class FactorialTest {
     public void shouldFindFactorialOfOne() {
         assertEquals(1, new Factorial(1).value());
     }
+
+    @Test
+    public void shouldFindFactorialOfAnyNumber() {
+        assertEquals(3628800, new Factorial(10).value());
+    }
 }
